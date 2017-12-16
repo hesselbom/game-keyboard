@@ -6,8 +6,7 @@ Check current state of keyboard keys in the browser. Suitable for games.
 
 ```javascript
 var Keyboard = require("game-keyboard");
-var keyMap = require("game-keyboard/key_map")["US"];
-var keyboard = new Keyboard(keyMap);
+var keyboard = new Keyboard();
 
 // with no keys pressed
 keyboard.isPressed("up"); // returns false
@@ -20,6 +19,9 @@ keyboard.consumePressed("up"); // returns true
 // continuing to press up arrow
 keyboard.isPressed("up"); // returns true
 keyboard.consumePressed("up"); // returns false
+
+// uninstall
+keyboard.uninstall();
 ```
 
 # Constructor
@@ -43,13 +45,9 @@ This is useful for when you want to do some action only the first time a key is 
 
 Accepts a key name that is specified in the keymap that was given to the constructor.
 
-# Install
+# `uninstall()`
 
-With [npm](https://www.npmjs.com/) do:
-
-```
-npm install game-keyboard
-```
+Uninstall listeners
 
 # License
 

@@ -16,6 +16,7 @@
     "keyboard"
   ],
   "author": "Eric Lathrop <eric@ericlathrop.com> (http://ericlathrop.com/)",
+  "contributors": ["Viktor Hesselbom <viktor@hesselbom.net> (http://hesselbom.net/)"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ericlathrop/game-keyboard/issues"
